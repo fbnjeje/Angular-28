@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  cities =['Madrid','Lima','Bogota','Bilboa']
+
   title = 'dia 1';
   url = 'https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1200x675.jpg'
-  name = 'FBN'
+  name!: string
 }
+ 

@@ -3,6 +3,25 @@
 
 <!-- <img src="{{ url}}" alt=""> -->
 
-<p>El nombre es: {{ name }}</p>
+<p *ngIf="name">El nombre es: {{ name }}</p>
 
 <input type="text" [(ngModel)]="name">
+
+
+
+
+<ul *ngFor="let city of cities">
+    <!-- AGREGAR CLASES CON ARRAYS
+    <li [ngClass]="['selected','blue']">{{ city }}</li>
+    -->
+
+
+    <!-- AGREGAR CLAES CON ELEMENTOS 
+    <li [ngClass]="{'selected':city === 'Lima', 'blue': city !== 'Lima'}">{{ city }}</li> -->
+
+
+
+
+    <!-- AGREGAR ESTILOSSS DESDE ACA XD? 
+    <li [ngStyle]="{'color':'red'}"> {{ city }}</li> -->
+</ul>
