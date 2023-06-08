@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ReDoing';
+
+
+  name!:string;
+
+  cities = ['Colombia','Canada','Camerun'];
+
+  selected!: string;
+
+
+  onClicked(i:string){
+    console.log("Hola");
+    this.selected = i;
+  }
+
 }
+
