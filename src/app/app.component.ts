@@ -20,6 +20,10 @@ export class AppComponent {
     console.log("Hola");
     this.selected = i;
   }
+  reset(){
+    this.selected = ''
+
+  }
 
 }
 

@@ -1,13 +1,18 @@
 <div>
-  <p *ngIf="name">Su pais es: {{name}}</p>
   <input type="text" [(ngModel)]="name">
+  <p *ngIf="name">Su pais es: {{name}}</p>
 </div>
+
+<hr>
+
 
 
 <ul>
   <li (click)="onClicked(i)" *ngFor="let i of cities" [ngClass]="{'on':i === selected}">{{i}}</li>
 </ul>
 
-<div>
-  <p *ngIf="selected">su seleccion es: {{selected}}</p>
+<div *ngIf="selected">
+  <p>su seleccion es: {{selected}}</p>
+  <!-- <button (click)="reset()">reset</button> -->
+  <app-button (click)="reset()" [color]="'blue'" [label]="'reset'"></app-button>
 </div>
