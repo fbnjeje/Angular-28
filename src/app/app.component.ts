@@ -6,24 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ReDoing';
-
-
-  name!:string;
-
-  cities = ['Colombia','Canada','Camerun'];
-
-  selected!: string;
-
-
-  onClicked(i:string){
-    console.log("Hola");
-    this.selected = i;
-  }
-  reset(){
-    this.selected = ''
-
-  }
-
+  title = 'ngw-cribs';
 }
-
