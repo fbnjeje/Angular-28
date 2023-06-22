@@ -17,4 +17,12 @@ export class ContadorComponent implements OnInit {
   //   nombre: "fernando",
   //   edad:23
   // }
+
+  numero:number = 1;
+  mas(){
+   this.numero ++; 
+  }
+  menos(){
+    this.numero --;
+  }
 }
