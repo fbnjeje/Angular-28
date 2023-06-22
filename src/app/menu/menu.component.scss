@@ -1,0 +1,13 @@
+#menu{
+    display: flex;
+    background-color: bisque;
+}
+
+#menu li{
+    display: inline;
+}
+#menu li span {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding: 10px;
+}
