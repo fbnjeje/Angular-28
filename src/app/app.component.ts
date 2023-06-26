@@ -9,5 +9,19 @@ export class AppComponent {
   title = 'Curso angular ';
 
 
-  
+  hola = [
+    "pedro",
+    "laura",
+    "valentina",
+    "ferxxxo"
+  ]
+  Activated = true;
+
+
+  press(){
+    this.Activated = false;
+  }
+  dontpress(){
+    this.Activated = true;
+  }
 }

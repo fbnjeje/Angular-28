@@ -1,2 +1,14 @@
 <h1>esto es un : {{ title }}</h1>
-<app-contador></app-contador>
+
+<ul *ngFor="let i of hola">
+    <app-user [nameUser]="i"></app-user>
+</ul>
+<hr>
+
+
+
+<div>
+    <li *ngIf="Activated">hola</li>
+    <button (click)="press()">press</button>
+    <button (click)="dontpress()">dont press</button>
+</div>
