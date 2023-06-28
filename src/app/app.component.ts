@@ -27,4 +27,23 @@ export class AppComponent {
 
 
   name:string = "Ray Ray";
+  age!:number;
+  address:{
+    street:string;
+    city:string;
+  }
+  
+  hobbies!: string[];
+
+  constructor(){
+    this.age = 29;
+    this.address = {
+      street: '211b baker street',
+      city: "London"
+    };
+
+    this.hobbies = ['nada','escribir','comer'];
+  }
+
 }
+
