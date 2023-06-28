@@ -24,4 +24,7 @@ export class AppComponent {
   dontpress(){
     this.Activated = true;
   }
+
+
+  name:string = "Ray Ray";
 }
