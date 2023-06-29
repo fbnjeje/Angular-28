@@ -25,6 +25,12 @@
 </div>
 -->
 
+
+<form (submit)="agregarUsuario(newUser)">
+    <input type="text" #newUser>
+    <button>enviar usuario</button>
+</form>
+
 <li>
     <ul *ngFor="let user of users">
         {{user}}
