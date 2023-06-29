@@ -1,4 +1,4 @@
-<h1>esto es un : {{ title }}</h1>
+<!-- <h1>esto es un : {{ title }}</h1>
 
 <ul *ngFor="let i of hola">
     <app-user [nameUser]="i"></app-user>
@@ -23,3 +23,15 @@
         </li>
     </ul>
 </div>
+-->
+
+<li>
+    <ul *ngFor="let user of users">
+        {{user}}
+        <button (click)="deleteUser(user)">x</button>
+    </ul>
+</li>
+
+
+
+
