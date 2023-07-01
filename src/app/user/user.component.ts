@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class UserComponent {
 
-
+  title = "User HJASKJFHJAK"
   @Input() nameUser: any;
 }
